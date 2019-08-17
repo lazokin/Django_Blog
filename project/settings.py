@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'accounts.apps.AccountsConfig'
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,6 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
